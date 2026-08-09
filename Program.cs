@@ -11,8 +11,8 @@ namespace AkilliEv
 {
     public class Program
     {
-        public const string ssıd = "BOSNAK_2.4GHz";
-        public const string pass = "suzan197979";
+        public const string ssıd = "Wifi_SSID";
+        public const string pass = "Wifi_Passwort";
         public const string TvIp = "192.168.1.104";
         private static CancellationTokenSource cts;
         public const int portNum = 8080;
