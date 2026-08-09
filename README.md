@@ -19,6 +19,10 @@ Proje iki ana yazılım bileşeninin bulut üzerinde köprü kurmasıyla çalı�
 * **Masaüstü Arayüz:** C# MAUI(XAML)
 * **Protokoller:** TCP/IP Sockets, HTTP (GET, PUT), JSON
 * **İzleme & Loglama:** PuTTY (Serial Terminal)
+* Ekran Görüntüleri
+* PuTTY resmi için:![PuTTY Ekranı](PuTTY.png)
+* Firebase resmi için:![Firebase Paneli](Firebase.png)
+* MAUI arayüzü için:![MAUI Ekranı](MAUI.png)
 
 
 
