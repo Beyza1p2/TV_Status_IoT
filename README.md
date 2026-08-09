@@ -6,13 +6,13 @@ Bu proje, bir **ESP32** mikrodenetleyici kartı kullanarak evdeki akıllı telev
 Proje iki ana yazılım bileşeninin bulut üzerinde köprü kurmasıyla çalışır:
 **Donanım Katmanı (ESP32 / .NET nanoFramework):**
    * Belirtilen yerel IP ve Port (8080) üzerinden TV'ye TCP Soket testi gönderir.
-   * TV açık ise bağlantı başarılı olur ve Firebase'e `PUT` isteği ile "ACIK" verisini fırlatır.
-   * TV kapalı ise bağlantı düşer, `catch` bloğu güvenle devreye girer ve Firebase'e "KAPALI" verisini yazar.
+   * TV açık ise bağlantı başarılı olur ve Firebase'e PUT isteği ile "ACIK" verisini fırlatır.
+   * TV kapalı ise bağlantı düşer, catch bloğu güvenle devreye girer ve Firebase'e "KAPALI" verisini yazar.
    * Hafıza sızıntılarını (Memory Leak) önlemek için tüm internet akışları iç içe `using` blokları ile anında imha edilir.
    * **Bulut Katmanı (Firebase Realtime Database):**
    * Cihaz ile arayüz uygulaması arasında ortak bir dijital pano görevi görür. Verileri JSON formatında anlık tutar.
 **Arayüz Katmanı (C# Masaüstü Uygulaması):**
-   * Buluttaki veriyi `GET` isteği ile asenkron (async/await) olarak çeker ve ekranı dondurmadan kullanıcıya yansıtır.
+   * Buluttaki veriyi GET isteği ile asenkron (async/await) olarak çeker ve ekranı dondurmadan kullanıcıya yansıtır.
 #Kullanılan Teknolojiler
 * **Donanım Programlama:** C#, .NET nanoFramework
 * **Bulut Çözümü:** Firebase Realtime Database
